@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="LP3DES2.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>LP3 · DES2</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <h3>LABORATORIO DE PROGRAMACION 3 · DESEMPEÑO Nº 2</h3>
+    <form id="form1" runat="server">
+        <div id="navbar">
+            
+            <br />
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registracion.aspx">Registración</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/GestionDeArchivos.aspx">Gestion de Archivos</asp:HyperLink>
+            <br />
+            <br />
+            </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer"></div>
+        <p>
+            <STRONG>PROFESOR: Pablo Bobarini</STRONG>
+
+        </p>
+        <p>
+            <strong>ALUMNO: Omar Taglialavore Suchy</strong>
+
+        </p>
+    </form>
+</body>
+</html>
